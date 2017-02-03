@@ -1,0 +1,821 @@
+x`<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Реализация зерна</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="_main.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+  </head>
+  <body>
+    <div class="page">
+      <!-- BEGIN HEADER -->
+      <header class="size_item">
+        <div class="header-head">
+          <div class="container">
+            <div class="header-head__side"><span class="header-head__title">Агропромышленный холдинг</span></div>
+            <div class="header-head__side header-head__side_right"><a href="#" class="header-head__report-link"><i class="icon icon_info header-head__info-icon"></i><span class="header-head__report-text">Годовой отчет 2014г</span></a>
+              <div class="lang in-head"><a href="#" class="lang__link active">рус</a><a href="#" class="lang__link">en</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="header-body">
+          <div class="container">
+            <div class="logo header-body__logo"><a href="/" class="logo__link"><img src="img/logo_rt.png" alt="" class="logo__img"></a></div>
+            <div class="main-menu-container header-body__main-menu">
+              <div class="hamburger">
+                <div class="hamburger__text-header">Меню<span class="hamburger__line hamburger__line-1"></span><span class="hamburger__line hamburger__line-2"></span><span class="hamburger__line hamburger__line-3"></span></div>
+              </div>
+              <ul class="main-menu">
+                <li class="main-menu__item main-menu__item_main-sub-menu active"><a href="#" class="main-menu__link">О компании</a>
+                  <ul class="main-sub-menu">
+                    <li class="main-sub-menu__item regular-text"><a href="#" class="main-sub-menu__link">О компании</a></li>
+                    <li class="main-sub-menu__item regular-text"><a href="#" class="main-sub-menu__link">История</a></li>
+                    <li class="main-sub-menu__item regular-text"><a href="#" class="main-sub-menu__link">Структура компании</a></li>
+                    <li class="main-sub-menu__item regular-text"><a href="#" class="main-sub-menu__link">Руководство</a></li>
+                    <li class="main-sub-menu__item regular-text"><a href="#" class="main-sub-menu__link">Персонал</a></li>
+                    <li class="main-sub-menu__item regular-text"><a href="#" class="main-sub-menu__link">Земельный фонд</a></li>
+                    <li class="main-sub-menu__item regular-text"><a href="#" class="main-sub-menu__link">Транспорт и логистика</a></li>
+                  </ul>
+                </li>
+                <li class="main-menu__item main-menu__item_main-sub-menu"><a href="#" class="main-menu__link">Направление работы</a>
+                  <ul class="main-sub-menu">
+                    <li class="main-sub-menu__item regular-text"><a href="#" class="main-sub-menu__link">Растениеводство</a></li>
+                    <li class="main-sub-menu__item regular-text"><a href="#" class="main-sub-menu__link">Семеноводство</a></li>
+                    <li class="main-sub-menu__item regular-text"><a href="#" class="main-sub-menu__link">Животноводство</a></li>
+                    <li class="main-sub-menu__item regular-text"><a href="#" class="main-sub-menu__link">Элеватор</a></li>
+                    <li class="main-sub-menu__item regular-text"><a href="#" class="main-sub-menu__link">Лаборатория</a></li>
+                    <li class="main-sub-menu__item regular-text"><a href="#" class="main-sub-menu__link">Транспорт и логистика</a></li>
+                    <li class="main-sub-menu__item regular-text"><a href="#" class="main-sub-menu__link">Персонал</a></li>
+                  </ul>
+                </li>
+                <li class="main-menu__item main-menu__item_main-sub-menu"><a href="#" class="main-menu__link">Корпоративная ответственность</a>
+                  <ul class="main-sub-menu">
+                    <li class="main-sub-menu__item regular-text"><a href="#" class="main-sub-menu__link">Производственная безопасность</a></li>
+                    <li class="main-sub-menu__item regular-text"><a href="#" class="main-sub-menu__link">Охрана окружающей среды</a></li>
+                    <li class="main-sub-menu__item regular-text"><a href="#" class="main-sub-menu__link">Развитие персонала</a></li>
+                    <li class="main-sub-menu__item regular-text"><a href="#" class="main-sub-menu__link">Сотрудничество с регионами</a></li>
+                    <li class="main-sub-menu__item regular-text"><a href="#" class="main-sub-menu__link">Социальная политика</a></li>
+                    <li class="main-sub-menu__item regular-text"><a href="#" class="main-sub-menu__link">Благотворительность</a></li>
+                    <li class="main-sub-menu__item regular-text"><a href="#" class="main-sub-menu__link">Бизнес-этика</a></li>
+                  </ul>
+                </li>
+                <li class="main-menu__item main-menu__item_main-sub-menu"><a href="#" class="main-menu__link">Поставщивкам</a>
+                  <ul class="main-sub-menu">
+                    <li class="main-sub-menu__item regular-text"><a href="#" class="main-sub-menu__link">Подать заявку на участие</a></li>
+                    <li class="main-sub-menu__item regular-text"><a href="#" class="main-sub-menu__link">Нормативные документы</a></li>
+                    <li class="main-sub-menu__item regular-text"><a href="#" class="main-sub-menu__link">Планируемые закупки</a></li>
+                    <li class="main-sub-menu__item regular-text"><a href="#" class="main-sub-menu__link">Текущие закупки</a></li>
+                  </ul>
+                </li>
+                <li class="main-menu__item main-menu__item_main-sub-menu"><a href="#" class="main-menu__link">Инвесторам</a>
+                  <ul class="main-sub-menu">
+                    <li class="main-sub-menu__item regular-text"><a href="#" class="main-sub-menu__link">Отчетность ООО «Парус Агро Груп»</a></li>
+                    <li class="main-sub-menu__item regular-text"><a href="#" class="main-sub-menu__link">Учредительные документы </a></li>
+                  </ul>
+                </li>
+                <li class="main-menu__item main-menu__item_main-sub-menu"><a href="#" class="main-menu__link">Карьера</a>
+                  <ul class="main-sub-menu">
+                    <li class="main-sub-menu__item regular-text"><a href="#" class="main-sub-menu__link">Вакансии</a></li>
+                    <li class="main-sub-menu__item regular-text"><a href="#" class="main-sub-menu__link">Отправить резюме</a></li>
+                  </ul>
+                </li>
+                <li class="main-menu__item"><a href="#" class="main-menu__link">Контакты</a></li>
+              </ul>
+              <div class="still">
+                <div class="still__button">ЕЩЁ
+                  <ul class="still__list"></ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- END HEADER -->
+  
+    <div class="wrapper">
+      <!-- BEGIN b-implementation -->
+      <div class="b-implementation">
+        <div class="container">
+          <div class="b-implementation__title pbt15 clearfix">
+              <div class='b-login float_r'>
+                  <span class='b-login__descr'>Зарегистрированные организации принимают участие <br> в открытых и закрытых аукционах и продажах зерновых.</span>
+                  <div class="b-login__wrapper">
+                    <a class="b-login__open-btn" href="#">Регистрация или вход</a>
+                    <form action="#" class="b-login-form">
+                      <div class="b-login-form__login-sect">
+                        <p class='b-login-form__title'>Вход в личный кабинет</p>
+                        <div class="b-login-form__cont-line">
+                          <input type="text" placeholder="Логин" class="b-login-form__input">
+                        </div>
+                        <div class="b-login-form__cont-line">
+                          <input type="text" placeholder="Пароль" class="b-login-form__input">
+                        </div>
+                        <div class="b-login-form__cont-line">
+                          <label class="b-login-form__label">
+                            <input type="checkbox" class="b-login-form__checkbox">
+                            <span class="b-login-form__label-text">Оставаться в системе</span>
+                          </label>
+                        </div>
+                        <div class="b-login-form__cont-line">
+                          <button class="b-login-form__button">Войти</button>
+                        </div>
+                         <div class="b-login-form__cont-line">
+                          <a href="#" class="b-login-form__remember-pass" data-call="recovery" >Вспомнить пароль</a>
+                        </div>
+                      </div>
+                      <div class="b-login-form__reg-sect">
+                        <a href="#" class="b-login-form__reg-text" data-call="confirmation"> Зарегистрироваться</a>
+                      </div>
+                    </form>
+                  </div>
+              </div>
+              <div class="b-registration-title mt10 float_l">
+                  <a class='b-registration-title__item active' href="#">Регистрация</a>
+                  <a class='b-registration-title__item' href="#">Вход</a>
+              </div>
+            </div>
+                
+            <div class="b-registration">
+                <div class='b-registration-type'>
+                     <div class='registration-form__input-line'>
+                        <div class="registration-form__input-line__left">
+                            <span class="registration-form__input-name">Тип регистрации</span>
+                        </div>
+                        <div class="registration-form__input-line__right">
+                            <div class="b-radio-toggle">
+                                <label class="b-radio-toggle__label" data-reg-selection="short">
+                                    <input class="standard-radio-btn" checked="checked" type="radio" value="open" name="type-reg">
+                                    <span class='b-radio-toggle__label__text'>Быстрая</span>
+                                </label><br>
+                                <label class="b-radio-toggle__label" data-reg-selection="full">
+                                    <input class="standard-radio-btn" type="radio" value="closed" name="type-reg">
+                                    <span class='b-radio-toggle__label__text'>Расширенная</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="b-registration__content-section b-account-registration">
+
+                    <form class="registration-form visible" data-reg-form="short" action="#">
+                        <div class="registration-form__item-cont">
+                            <p class='registration-form__title'>Регистрационные данные</p>
+                            <div class='registration-form__input-line'>
+                                <div class="registration-form__input-line__left">
+                                    <span class="registration-form__input-name">Логин</span>
+                                </div>
+                                <div class="registration-form__input-line__right">
+                                    <input type="text" class="registration-form__input w560">
+                                </div>
+                            </div>
+                            <div class='registration-form__input-line'>
+                                <div class="registration-form__input-line__left">
+                                    <span class="registration-form__input-name">Пароль </span>
+                                </div>
+                                <div class="registration-form__input-line__right b-password-input">
+                                   <input type="password" class="registration-form__input">
+                                   <div class='b-password-visibility'></div>
+                                </div>
+                            </div>
+                            <div class='registration-form__input-line'>
+                                <div class="registration-form__input-line__left">
+                                    <span class="registration-form__input-name">Подтверждение пароля </span>
+                                </div>
+                                <div class="registration-form__input-line__right b-password-input">
+                                    <input type="password" class="registration-form__input">
+                                    <div class='b-password-visibility'></div>
+                                </div>
+                            </div>
+                            <div class='registration-form__input-line'>
+                                <div class="registration-form__input-line__left">
+                                    <span class="registration-form__input-name">Мобильный телефон</span>
+                                </div>
+                                <div class="registration-form__input-line__right">
+                                    <input type="text" class="registration-form__input inputmask">
+                                    <p class="registration-form__more-info-text">Необходимо подтверждение по коду из смс</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="registration-form__item-cont">
+                            <p class='registration-form__title'>Контактное лицо</p>
+                            <div class='registration-form__input-line'>
+                                <div class="registration-form__input-line__left">
+                                    <span class="registration-form__input-name">Ф. И. О.</span>
+                                </div>
+                                <div class="registration-form__input-line__right">
+                                    <input type="text" class="registration-form__input w560">
+                                </div>
+                            </div>
+                            <div class='registration-form__input-line'>
+                                <div class="registration-form__input-line__left">
+                                    <span class="registration-form__input-name">Должность </span>
+                                </div>
+                                <div class="registration-form__input-line__right">
+                                    <input type="text" class="registration-form__input w560">
+                                </div>
+                            </div>
+                            <div class='registration-form__input-line'>
+                                <div class="registration-form__input-line__left">
+                                    <span class="registration-form__input-name">Электронная почта </span>
+                                </div>
+                                <div class="registration-form__input-line__right">
+                                    <input type="text" class="registration-form__input w560">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="registration-form__item-cont">
+                            <p class='registration-form__title'>Организация</p>
+                            <div class='registration-form__input-line'>
+                                <div class="registration-form__input-line__left">
+                                    <span class="registration-form__input-name">Краткое наименование организации</span>
+                                </div>
+                                <div class="registration-form__input-line__right">
+                                    <input type="text" class="registration-form__input w560" placeholder="ООО «Название компании» ">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="registration-form__submit">
+                            <button class="standard-h50-btn">Отправить</button>
+                        </div>
+                    </form>
+
+
+
+
+
+                    <form action="#" class="registration-form" data-reg-form="full">
+                        <div class="registration-form__item-cont">
+                            <p class='registration-form__title'>Организация</p>
+                            <div class='registration-form__input-line'>
+                                <div class="registration-form__input-line__left">
+                                    <span class="registration-form__input-name">Организационно-правовая форма</span>
+                                </div>
+                                <div class="registration-form__input-line__right">
+                                    <input type="text" class="registration-form__input w560">
+                                </div>
+                            </div>
+                            <div class='registration-form__input-line'>
+                                <div class="registration-form__input-line__left">
+                                    <span class="registration-form__input-name">Полное наименование организации </span>
+                                </div>
+                                <div class="registration-form__input-line__right">
+                                    <input type="text" class="registration-form__input w560" placeholder="Общество с ограниченной ответсвенностью «Название компании» ">
+                                </div>
+                            </div>
+                            <div class='registration-form__input-line'>
+                                <div class="registration-form__input-line__left">
+                                    <span class="registration-form__input-name">Краткое наименование организации </span>
+                                </div>
+                                <div class="registration-form__input-line__right">
+                                    <input type="text" class="registration-form__input w560">
+                                </div>
+                            </div>
+                            <div class='registration-form__input-line'>
+                                <div class="registration-form__input-line__left">
+                                    <span class="registration-form__input-name">Страна регистрации</span>
+                                </div>
+                                <div class="registration-form__input-line__right">
+                                    <select class="registration-form__select">
+                                        <option value="1">Австрия</option>
+                                        <option value="2">Австрия</option>
+                                        <option value="3">Австрия</option>
+                                        <option value="4">Австрия</option>
+                                        <option value="5">Австрия</option>
+                                         <option value="1">Австрия</option>
+                                        <option value="2">Австрия</option>
+                                        <option value="3">Австрия</option>
+                                        <option value="4">Австрия</option>
+                                        <option value="5">Австрия</option>
+                                        <option value="1">Австрия</option>
+                                        <option value="2">Австрия</option>
+                                        <option value="3">Австрия</option>
+                                        <option value="4">Австрия</option>
+                                        <option value="5">Австрия</option>
+                                         <option value="1">Австрия</option>
+                                        <option value="2">Австрия</option>
+                                        <option value="3">Австрия</option>
+                                        <option value="4">Австрия</option>
+                                        <option value="5">Австрия</option>
+                                        <option value="1">Австрия</option>
+                                        <option value="2">Австрия</option>
+                                        <option value="3">Австрия</option>
+                                        <option value="4">Австрия</option>
+                                        <option value="5">Австрия</option>
+                                         <option value="1">Австрия</option>
+                                        <option value="2">Австрия</option>
+                                        <option value="3">Австрия</option>
+                                        <option value="4">Австрия</option>
+                                        <option value="5">Австрия</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class='registration-form__input-line'>
+                                <div class="registration-form__input-line__left">
+                                    <span class="registration-form__input-name">Номер свидетельства о регистрации</span>
+                                </div>
+                                <div class="registration-form__input-line__right">
+                                    <input type="text" class="registration-form__input">
+                                </div>
+                            </div>
+                            <div class='registration-form__input-line'>
+                                <div class="registration-form__input-line__left">
+                                    <span class="registration-form__input-name">Дата регистрации</span>
+                                </div>
+                                <div class="registration-form__input-line__right">
+                                    <div class='b-standard-datepicker'>
+                                        <input type="text" class="standard-datepicker">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class='registration-form__input-line'>
+                                <div class="registration-form__input-line__left">
+                                    <span class="registration-form__input-name">Ф. И. О. руководителя</span>
+                                </div>
+                                <div class="registration-form__input-line__right">
+                                    <input type="text" class="registration-form__input w560">
+                                </div>
+                            </div>
+                            <div class='registration-form__input-line'>
+                                <div class="registration-form__input-line__left">
+                                    <span class="registration-form__input-name">Должность руководителя</span>
+                                </div>
+                                <div class="registration-form__input-line__right">
+                                    <input type="text" class="registration-form__input w560">
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="registration-form__item-cont">
+                            <p class='registration-form__title'>Контактное лицо</p>
+                            <div class='registration-form__input-line'>
+                                <div class="registration-form__input-line__left">
+                                    <span class="registration-form__input-name">Ф. И. О. </span>
+                                </div>
+                                <div class="registration-form__input-line__right">
+                                    <input type="text" class="registration-form__input w560">
+                                </div>
+                            </div>
+                            <div class='registration-form__input-line'>
+                                <div class="registration-form__input-line__left">
+                                    <span class="registration-form__input-name">Должность </span>
+                                </div>
+                                <div class="registration-form__input-line__right">
+                                    <input type="text" class="registration-form__input w560">
+                                </div>
+                            </div>
+                            <div class='registration-form__input-line'>
+                                <div class="registration-form__input-line__left">
+                                    <span class="registration-form__input-name">Рабочий телефон</span>
+                                </div>
+                                <div class="registration-form__input-line__right">
+                                    <input type="text" class="registration-form__input w560">
+                                </div>
+                            </div>
+                            <div class='registration-form__input-line'>
+                                <div class="registration-form__input-line__left">
+                                    <span class="registration-form__input-name">Мобильный телефон</span>
+                                </div>
+                                <div class="registration-form__input-line__right">
+                                    <input type="text" class="registration-form__input w560">
+                                </div>
+                            </div>
+                            <div class='registration-form__input-line'>
+                                <div class="registration-form__input-line__left">
+                                    <span class="registration-form__input-name">Электронная почта</span>
+                                </div>
+                                <div class="registration-form__input-line__right">
+                                    <input type="text" class="registration-form__input w560">
+                                </div>
+                            </div>
+                        </div>
+
+
+                         <div class="registration-form__item-cont">
+                            <p class='registration-form__title'>Адрес организации</p>
+                            <div class='registration-form__input-line'>
+                                <div class="registration-form__input-line__left">
+                                    <span class="registration-form__input-name">Юридический адрес </span>
+                                </div>
+                                <div class="registration-form__input-line__right">
+                                    <textarea class="registration-form__textarea"></textarea>
+                                </div>
+                            </div>
+                            <div class='registration-form__input-line'>
+                                <div class="registration-form__input-line__left">
+                                    <span class="registration-form__input-name">Фактический адрес </span>
+                                </div>
+                                <div class="registration-form__input-line__right">
+                                    <div class="registration-form__label-wrapper">
+                                        <label class="registration-form__label">
+                                            <input type="checkbox" class="standard-checkbox">   
+                                             <span class="registration-form__label-text">Совпадает с юридическим адресом</span>
+                                        </label>
+                                    </div>
+                                    <textarea class="registration-form__textarea"></textarea>
+                                </div>
+                            </div>
+                            <div class='registration-form__input-line'>
+                                <div class="registration-form__input-line__left">
+                                    <span class="registration-form__input-name">Сайт</span>
+                                </div>
+                                <div class="registration-form__input-line__right">
+                                    <input type="text" class="registration-form__input w560">
+                                </div>
+                            </div>
+                            <div class='registration-form__input-line'>
+                                <div class="registration-form__input-line__left">
+                                    <span class="registration-form__input-name">Эл.почта организации</span>
+                                </div>
+                                <div class="registration-form__input-line__right">
+                                    <input type="text" class="registration-form__input w560">
+                                </div>
+                            </div>
+                        </div>
+
+                        
+                        <div class="registration-form__item-cont">
+                            <p class='registration-form__title'>Реквизиты</p>
+                            <div class='registration-form__input-line'>
+                                <div class="registration-form__input-line__left">
+                                    <span class="registration-form__input-name">ИНН компании</span>
+                                </div>
+                                <div class="registration-form__input-line__right">
+                                    <input type="text" class="registration-form__input">
+                                </div>
+                            </div>
+                            <div class='registration-form__input-line'>
+                                <div class="registration-form__input-line__left">
+                                    <span class="registration-form__input-name">КПП компании </span>
+                                </div>
+                                <div class="registration-form__input-line__right">
+                                    <input type="text" class="registration-form__input">
+                                </div>
+                            </div>
+                            <div class='registration-form__input-line'>
+                                <div class="registration-form__input-line__left">
+                                    <span class="registration-form__input-name">Название банка </span>
+                                </div>
+                                <div class="registration-form__input-line__right">
+                                   <textarea class="registration-form__textarea"></textarea>
+                                </div>
+                            </div>
+                            <div class='registration-form__input-line'>
+                                <div class="registration-form__input-line__left">
+                                    <span class="registration-form__input-name">Расчетный счет а банке</span>
+                                </div>
+                                <div class="registration-form__input-line__right">
+                                    <input type="text" class="registration-form__input w560">
+                                </div>
+                            </div>
+                            <div class='registration-form__input-line'>
+                                <div class="registration-form__input-line__left">
+                                    <span class="registration-form__input-name">Корсчет а банке</span>
+                                </div>
+                                <div class="registration-form__input-line__right">
+                                    <input type="text" class="registration-form__input w560">
+                                </div>
+                            </div>
+                            <div class='registration-form__input-line'>
+                                <div class="registration-form__input-line__left">
+                                    <span class="registration-form__input-name">БИК компании</span>
+                                </div>
+                                <div class="registration-form__input-line__right">
+                                    <input type="text" class="registration-form__input w560">
+                                </div>
+                            </div>
+                            <div class='registration-form__input-line'>
+                                <div class="registration-form__input-line__left">
+                                    <span class="registration-form__input-name">ОГРН компании</span>
+                                </div>
+                                <div class="registration-form__input-line__right">
+                                    <input type="text" class="registration-form__input w560">
+                                </div>
+                            </div>
+                            <div class='registration-form__input-line'>
+                                <div class="registration-form__input-line__left">
+                                    <span class="registration-form__input-name">ОКПО компании</span>
+                                </div>
+                                <div class="registration-form__input-line__right">
+                                    <input type="text" class="registration-form__input w560">
+                                </div>
+                            </div>
+                            <div class='registration-form__input-line'>
+                                <div class="registration-form__input-line__left">
+                                    <span class="registration-form__input-name">ОКАТО компании</span>
+                                </div>
+                                <div class="registration-form__input-line__right">
+                                    <input type="text" class="registration-form__input w560">
+                                </div>
+                            </div>
+                        </div>
+
+                            
+                        <div class="registration-form__item-cont">
+                            <p class='registration-form__title'>Регистрационные данные</p>
+                            <div class='registration-form__input-line'>
+                                <div class="registration-form__input-line__left">
+                                    <span class="registration-form__input-name">Логин</span>
+                                </div>
+                                <div class="registration-form__input-line__right">
+                                    <input type="text" class="registration-form__input w560">
+                                </div>
+                            </div>
+                            <div class='registration-form__input-line'>
+                                <div class="registration-form__input-line__left">
+                                    <span class="registration-form__input-name">Пароль </span>
+                                </div>
+                                <div class="registration-form__input-line__right b-password-input">
+                                   <input type="password" class="registration-form__input">
+                                   <div class='b-password-visibility'></div>
+                                </div>
+                            </div>
+                            <div class='registration-form__input-line'>
+                                <div class="registration-form__input-line__left">
+                                    <span class="registration-form__input-name">Подтверждение пароля </span>
+                                </div>
+                                <div class="registration-form__input-line__right b-password-input">
+                                    <input type="password" class="registration-form__input">
+                                    <div class='b-password-visibility'></div>
+                                </div>
+                            </div>
+                            <div class='registration-form__input-line'>
+                                <div class="registration-form__input-line__left">
+                                    <span class="registration-form__input-name">Мобильный телефон</span>
+                                </div>
+                                <div class="registration-form__input-line__right">
+                                    <input type="text" class="registration-form__input inputmask">
+                                    <p class="registration-form__more-info-text">Необходимо подтверждение по коду из смс</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="registration-form__submit">
+                            <button class="standard-h50-btn">Отправить</button>
+                        </div>
+                    </form>
+
+
+
+                    
+
+
+                </div> 
+            </div>
+          
+        </div>
+      </div>
+      <!-- // END b-implementation -->
+
+
+
+
+      
+    <div class="footer-container">
+      <footer>
+        <div class="footer-head">
+          <div class="container">
+            <div class="logo footer-head__logo"><a href="/" class="logo__link"><img src="img/logo-green_rt.png" alt="" class="footer-head__logo-img"></a></div>
+            <div class="footer-head__phone"><a href="tel:+74942360249" class="footer-head__phone-link regular-text"><i class="icon icon_phone footer-head__phone-icon"></i><span class="footer-head__phone-text">+7 (4942) 360-249</span></a></div>
+            <div class="city footer-head__city"><span class="city__name">Кострома</span>
+              <div class="city_select">
+                <select name="city" class="select select_no_bg">
+                  <option value="0">сменить</option>
+                  <option value="0">сменить</option>
+                  <option value="0">сменить</option>
+                  <option value="0">сменить</option>
+                </select>
+              </div>
+            </div>
+            <div class="footer-head__addres"><i class="icon icon_addres footer-head__icon-addres"></i><span class="footer-head__text-addres">ул.Князева, д.2</span></div>
+            <div class="footer-head__clearfix"></div>
+            <form action="/" class="search footer-head__search">
+              <input type="text" placeholder="Поиск по сайту" class="input input_width_100 input_search">
+              <button type="submit" class="search__button"><i class="icon icon_search search__icon"></i></button>
+            </form>
+          </div>
+        </div>
+        <div class="footer-body">
+          <div class="container">
+            <div class="footer-hamburger"><span class="hamburger__text">Меню</span></div>
+            <div class="footer-blocks">
+              <div class="footer-block footer-block_company">
+                <h3 class="footer-block__title regular-text"><a href="#" class="footer-block__link-title">Наша компания</a></h3>
+                <ul class="footer-block__list">
+                  <li class="footer-block__item"><a href="#" class="footer-block__link">О компании</a></li>
+                  <li class="footer-block__item"><a href="#" class="footer-block__link">Новости</a></li>
+                  <li class="footer-block__item"><a href="#" class="footer-block__link">Преимущества</a></li>
+                  <li class="footer-block__item"><a href="#" class="footer-block__link">Земельный фонд</a></li>
+                  <li class="footer-block__item"><a href="#" class="footer-block__link">Холдинг в цифрах</a></li>
+                  <li class="footer-block__item"><a href="#" class="footer-block__link">Корпоративное управление</a></li>
+                  <li class="footer-block__item"><a href="#" class="footer-block__link">Руководство</a></li>
+                  <li class="footer-block__item"><a href="#" class="footer-block__link">История</a></li>
+                </ul>
+              </div>
+              <div class="footer-block footer-block_work">
+                <h3 class="footer-block__title regular-text"><a href="#" class="footer-block__link-title">Направления работы</a></h3>
+                <ul class="footer-block__list">
+                  <li class="footer-block__item"><a href="#" class="footer-block__link">Растениеводство</a></li>
+                  <li class="footer-block__item"><a href="#" class="footer-block__link">Семеноводство</a></li>
+                  <li class="footer-block__item"><a href="#" class="footer-block__link">Животноводство</a></li>
+                  <li class="footer-block__item"><a href="#" class="footer-block__link">Элеватор</a></li>
+                  <li class="footer-block__item"><a href="#" class="footer-block__link">Лаборатория</a></li>
+                  <li class="footer-block__item"><a href="#" class="footer-block__link">Транспорт и логистика</a></li>
+                  <li class="footer-block__item"><a href="#" class="footer-block__link">Персонал</a></li>
+                </ul>
+              </div>
+              <div class="footer-block footer-block_corporation">
+                <h3 class="footer-block__title regular-text"><a href="#" class="footer-block__link-title">Корпоративная ответственность</a></h3>
+                <ul class="footer-block__list">
+                  <li class="footer-block__item"><a href="#" class="footer-block__link">Производственная безопасность</a></li>
+                  <li class="footer-block__item"><a href="#" class="footer-block__link">Охрана окружающей среды</a></li>
+                  <li class="footer-block__item"><a href="#" class="footer-block__link">Развитие персонала</a></li>
+                  <li class="footer-block__item"><a href="#" class="footer-block__link">Сотрудничество с регионами</a></li>
+                  <li class="footer-block__item"><a href="#" class="footer-block__link">Социальная политика</a></li>
+                  <li class="footer-block__item"><a href="#" class="footer-block__link">Благотворительность</a></li>
+                  <li class="footer-block__item"><a href="#" class="footer-block__link">Бизнес-этика</a></li>
+                </ul>
+              </div>
+              <div class="footer-block footer-block_suppliers">
+                <h3 class="footer-block__title regular-text"><a href="#" class="footer-block__link-title">Поставщикам</a></h3>
+                <ul class="footer-block__list">
+                  <li class="footer-block__item"><a href="#" class="footer-block__link">Подать заявку на участие</a></li>
+                  <li class="footer-block__item"><a href="#" class="footer-block__link">Нормативные документы</a></li>
+                  <li class="footer-block__item"><a href="#" class="footer-block__link">Планируемые закупки</a></li>
+                  <li class="footer-block__item"><a href="#" class="footer-block__link">Текущие закупки</a></li>
+                </ul>
+              </div>
+              <div class="footer-block footer-block_investor">
+                <h3 class="footer-block__title regular-text"><a href="#" class="footer-block__link-title">Инвесторам</a></h3>
+                <ul class="footer-block__list">
+                  <li class="footer-block__item"><a href="#" class="footer-block__link">Отчетность ООО «Парус Агро Груп»</a></li>
+                  <li class="footer-block__item"><a href="#" class="footer-block__link">Учредительные документы </a></li>
+                </ul>
+              </div>
+              <div class="footer-block footer-block_career">
+                <h3 class="footer-block__title regular-text"><a href="#" class="footer-block__link-title">Карьера</a></h3>
+                <ul class="footer-block__list">
+                  <li class="footer-block__item"><a href="#" class="footer-block__link">Вакансии</a></li>
+                  <li class="footer-block__item"><a href="#" class="footer-block__link">Отправить резюме</a></li>
+                </ul>
+              </div>
+              <div class="footer-block footer-block_contact">
+                <h3 class="footer-block__title regular-text"><a href="#" class="footer-block__link-title">Контакты</a></h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-footer">
+          <div class="container">
+            <div class="copyright footer-footer__left"><span class="copyright__title regular-text">© Parus Agro Group, 2015</span><span class="copyright__description">Все права защищены. Копирование информации с сайта  только по запросу.</span></div>
+            <div class="developer footer-footer__right"><a href="yasno.mobi" class="developer__link regular-text">
+                <p class="developer__text">Yasno.mobi - <span class="developer__text-green green-text">адаптивный дизайн сайта</span></p></a></div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!-- END FOOTER -->
+
+
+  <div class="popup" data-popup="implementation">
+    <div class="popup-overlay"></div>
+    <div class='popup-table'>
+      <div class="popup-td">
+        <div class="popup-content implementation-popup">
+            <span class="popup-close" data-close-popup="all"></span>
+            <div class="implementation-popup__title">Предложение цены — <span class="lot-name">Лот АЗ-564-03</span></div>
+            <div class="implementation-popup__descr">
+              <p>Продажа пшеницы 4 класс (протеин 11,5%) — 50 тонн</p>
+              <p>Стартовая цена: 55 000 руб. </p>
+            </div>
+            <form action="#" class='implementation-popup__form'>
+              <div class="implementation-popup__line-wrap">
+                <div class="implementation-popup__left">
+                  Ваше имя
+                </div>
+                <div class="implementation-popup__right">
+                  <input type="text" class="implementation-popup__input">
+                </div>
+              </div>
+               <div class="implementation-popup__line-wrap">
+                <div class="implementation-popup__left">
+                  Контактный телефон
+                </div>
+                <div class="implementation-popup__right">
+                  <input type="text" class="implementation-popup__input inputmask w170" >
+                </div>
+              </div>
+               <div class="implementation-popup__line-wrap">
+                <div class="implementation-popup__left">
+                  Цена, руб.
+                </div>
+                <div class="implementation-popup__right">
+                  <input type="text" class="implementation-popup__input w170">
+                </div>
+              </div>
+               <div class="implementation-popup__button-wrap">
+                  <button class="implementation-popup__button" data-close-popup="implementation" data-call="sent"  >Отправить</button>
+              </div>
+            </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<div class="popup" data-popup="sent">
+    <div class="popup-overlay"></div>
+    <div class='popup-table'>
+      <div class="popup-td">
+        <div class="popup-content implementation-popup">
+            <span class="popup-close" data-close-popup="all"></span>
+            <div class="implementation-popup__title">Ваше предложение цены отправлено.</div>
+            <div class="implementation-popup__descr">
+              <p>Спасибо за участие в аукционе. Желаем вам победы!</p>
+            </div>
+        </div>
+      </div>
+    </div>
+ </div>
+
+
+<div class="popup" data-popup="confirmation">
+    <div class="popup-overlay"></div>
+    <div class='popup-table'>
+      <div class="popup-td">
+        <form class="popup-content standard-popup">
+            <span class="popup-close" data-close-popup="all"></span>
+            <div class="standard-popup__title">Подтверждение регистрации</div>
+            <div class="standard-popup__descr">Введите код из сообщения на номер мобильного <br> телефона, указанный при регистрации</div>
+      <div class="standard-popup__input-line">
+        <p class="standard-popup__input-title">Код из смс</p>
+        <input class="standard-popup__input" type="text">
+      </div>
+      <div class="standard-popup__button-line">
+        <button class='standard-popup__button'>Отправить</button>
+      </div>
+        </form>
+      </div>
+    </div>
+ </div>
+
+
+<div class="popup" data-popup="recovery">
+    <div class="popup-overlay"></div>
+    <div class='popup-table'>
+      <div class="popup-td">
+        <form class="popup-content standard-popup">
+            <span class="popup-close" data-close-popup="all"></span>
+            <div class="standard-popup__title">Восстановление пароля</div>
+            <div class="standard-popup__descr">
+              <p class="default-text">Укажите логин или электронную почту, на которую <br> зарегистрирован аккаунт</p>
+              <p class="error-text">Пользователя с указанными логином или эл. почтой <br> не существует. Пожалуйста, проверьте написание.</p>
+            </div>
+      <div class="standard-popup__input-line">
+        <p class="standard-popup__input-title">Логин или эл. почта</p>
+        <input class="standard-popup__input" type="text">
+      </div>
+      <div class="standard-popup__button-line">
+        <button class='standard-popup__button'>Отправить</button>
+      </div>
+        </form>
+      </div>
+    </div>
+ </div>
+
+
+
+    <div class="hidden">
+    </div><!--[if lt IE 9]>
+    <script src="libs/html5shiv/es5-shim.min.js"></script>
+    <script src="libs/html5shiv/html5shiv.min.js"></script>
+    <script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+    <script src="libs/respond/respond.min.js"></script><![endif]-->
+    <script src="libs/modernizr/modernizr.js"></script>
+    <script src="libs/jquery/jquery-1.11.2.min.js"></script>
+    <script src="libs/inputmask/input.mask.js"></script>
+    <script src="libs/owl/owl.carousel.min.js"></script>
+    <script src="libs/nice-select/jquery.nice-select.min.js"></script>
+    <script src="libs/accordion/accordion.min.js"></script>
+    <script src="libs/jscrollpane/jquery.jscrollpane.min.js"></script>
+    <script src="libs/radialCanvas/radialCanvas.js"></script>
+    <script src="libs/dropDownText/jquery.dropDownText.js"></script>
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="js/jquery.formstyler.min.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/new-page-common.js"></script>
+
+
+  </body>
+</html>
